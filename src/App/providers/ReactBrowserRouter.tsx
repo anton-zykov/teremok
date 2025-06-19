@@ -5,9 +5,11 @@ type ReactBrowserRouterProps = {
   children: ReactNode;
 };
 
+const repoName = import.meta.env.MODE === 'production' ? '/teremok' : '';
+
 export const ReactBrowserRouter = ({ children }: ReactBrowserRouterProps) => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={repoName}>
       {children}
     </BrowserRouter>
   );
