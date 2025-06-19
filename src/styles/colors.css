@@ -1,0 +1,62 @@
+:root {
+  /*--Text-Primary_Black: #1F1F1F;*/
+  /*--Text-Primary_White: #FFF;*/
+  /*--Text-Secondary_Dark-Gray: #444746;*/
+  /*--Text-Secondary_Gray: #747775;*/
+  /*--Text-Negative: #DC362E;*/
+  /*--Text-Positive: #228B22;*/
+
+  /*--Icon-Black: #1F1F1F;*/
+  /*--Icon-Dark-Gray: #444746;*/
+  /*--Icon-Gray: #747775;*/
+  /*--Icon-Gray-2: #8E918F;*/
+  /*--Icon-White: #FFF;*/
+  /*--Icon-Negative: #DC362E;*/
+  /*--Icon-Positive: #228B22;*/
+
+  --Color-Sky-Blue: #A6CAD3;
+  --Color-Taupe-Grey: #8B8589;
+  --Color-Fern-Green: #4F7942;
+  --Color-Green: #5E8E3D;
+  --Color-Sable: #6B4C3B;
+  --Color-Petal-Peach: #F9A39C;
+  --Color-Peach: #FFC0B2;
+  --Color-Cedar: #A65E2E;
+  --Color-White: #FFFFFF;
+
+  --Text-Primary: var(--Color-Fern-Green); /* Основной цвет текста, заголовков, иконок, primary-кнопок */
+  --Text-Secondary: var(--Color-Sable); /* Основной цвет для длинного текста, заголовков, кнопок в состоянии «активно» */
+
+  --Background-Primary: var(--Color-Sky-Blue); /* Основной фон страницы, светлые секции, модальные окна */
+  --Background-Secondary: var(--Color-Taupe-Grey); /* Второстепенные фоны, карточки, input-поля, бордеры */
+
+  --Button-Primary_Initial: var(--Color-Fern-Green);
+  --Button-Primary_Hover: var(--Color-Green);
+  --Button-Primary-Text: var(--Color-White);
+  --Button-Secondary_Initial: var(--Color-Petal-Peach);
+  --Button-Secondary_Hover: var(--Color-Peach);
+  --Button-Secondary-Text: var(--Color-Sable);
+
+  /*--Button-back-Primary_Initial: #FFD400;*/
+  /*--Button-back-Primary_Hover: #FFE699;*/
+  /*--Button-back-Primary_Disabled: #FFF5B1;*/
+  /*--Button-back-Secondary_Initial: #FFFFFF;*/
+  /*--Button-back-Secondary_Hover: #E1E3E1;*/
+  /*--Button-back-Secondary_Disabled: #F2F2F2;*/
+  /*--Button-back-Creen: #165C16;*/
+
+  /*--Tag-State_active: #1D711D;*/
+  /*--Tag-State_initial: #E1E3E1;*/
+
+  /*--Filter-State_active: #BCDCBC;*/
+
+  /*--Input-back-Error-hover: #FFEBEB;*/
+  /*--Input-back-Error: #FFF1F1;*/
+
+  /*--Stroke-Black: #1F1F1F;*/
+  /*--Stroke-Dark-Gray: #444746;*/
+  /*--Stroke-Gray: #747775;*/
+  /*--Stroke-Grey-2: #8E918F;*/
+  /*--Stroke-Light-gray: #E1E3E1;*/
+  /*--Stroke-Error: #DC362E;*/
+}
