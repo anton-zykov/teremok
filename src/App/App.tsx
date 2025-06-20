@@ -7,7 +7,6 @@ export const App = (): JSX.Element => {
   return (
     <Providers>
       <Page>
-        <h1>App</h1>
         <MainRouter />
       </Page>
     </Providers>

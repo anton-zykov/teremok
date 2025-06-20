@@ -3,9 +3,9 @@
   width: 100vw;
   display: grid;
   grid-template-areas:
-    "logo searchBar profile"
-    "sideMenu pageContent pageContent";
-  grid-template-columns: 4em 1fr auto;
+    "logo categories"
+    "pageContent pageContent";
+  grid-template-columns: 4em 1fr;
   grid-template-rows: 5em 1fr;
 }
 
@@ -13,16 +13,8 @@
   grid-area: logo;
 }
 
-.sideMenu {
-  grid-area: sideMenu;
-}
-
-.searchBar {
-  grid-area: searchBar;
-}
-
-.profile {
-  grid-area: profile;
+.categories {
+  grid-area: categories;
 }
 
 .pageContent {

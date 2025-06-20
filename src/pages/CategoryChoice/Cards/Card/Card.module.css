@@ -1,0 +1,36 @@
+.card {
+  /* SVG */
+  fill: var(--Color-Fern-Green);
+  filter: drop-shadow(3px 3px 2px rgba(255, 0, 0, 0));
+  transition: fill .2s ease-in, filter .2s ease-in, border .2s ease-in;
+
+  /* Text */
+  color: var(--Color-Fern-Green);
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 600;
+
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* Border */
+  border: 2px solid var(--Color-Fern-Green);
+  border-radius: 1em;
+}
+
+.card:hover {
+  fill: var(--Color-Cedar);
+  filter: drop-shadow(3px 3px 2px rgba(255, 0, 0, 0.2));
+
+  color: var(--Color-Cedar);
+
+  border: 2px solid var(--Color-Cedar);
+
+  cursor: pointer;
+}
+
+.card > p {
+  margin: 0 1em 1em;
+}
