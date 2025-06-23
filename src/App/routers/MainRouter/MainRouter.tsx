@@ -1,5 +1,5 @@
-import { Navigate, Route, Routes } from 'react-router-dom';
-import { CategoryChoice, PetsList } from '@/pages';
+import { Route, Routes } from 'react-router-dom';
+import { CategoryChoice, Pet, PetsList } from '@/pages';
 
 export const MainRouter = () => {
   return (
@@ -8,7 +8,7 @@ export const MainRouter = () => {
       <Route path="/cats/*" element={<PetsList species="cat" />} />
       <Route path="/dogs/*" element={<PetsList species="dog" />} />
       <Route path="/all/*" element={<PetsList species="all" />} />
-      <Route path="*" element={<Navigate to="/" replace={true} />} />
+      <Route path=":id" element={<Pet />} />
     </Routes>
   );
 };

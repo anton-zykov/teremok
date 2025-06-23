@@ -4,6 +4,7 @@ import petsJson from './data.json';
 interface IPetsRepository {
   pets: pet[];
   getSpecies(species: species): pet[];
+  getPet(id: number): pet | undefined;
 }
 
 class PetsRepository implements IPetsRepository {
@@ -19,6 +20,10 @@ class PetsRepository implements IPetsRepository {
 
   getSpecies(species: species) {
     return this.#pets.filter((pet) => pet.species === species);
+  }
+
+  getPet(id: number) {
+    return this.#pets.find((pet) => pet.id === id);
   }
 }
 
