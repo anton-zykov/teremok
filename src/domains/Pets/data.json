@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "species": "cat",
+    "name": "Tom",
+    "age": 3,
+    "color": "white",
+    "weight": 5,
+    "photo": "cat.svg"
+  },
+  {
+    "id": 2,
+    "species": "dog",
+    "name": "Fido",
+    "age": 5,
+    "color": "brown",
+    "weight": 10,
+    "photo": "dog.svg"
+  },
+  {
+    "id": 3,
+    "species": "cat",
+    "name": "Garfield",
+    "age": 4,
+    "color": "orange",
+    "weight": 6
+  },
+  {
+    "id": 4,
+    "species": "dog",
+    "name": "Rover",
+    "age": 8,
+    "color": "black",
+    "weight": 15
+  },
+  {
+    "id": 5,
+    "species": "cat",
+    "name": "Mittens",
+    "age": 2,
+    "color": "grey",
+    "weight": 4
+  },
+  {
+    "id": 6,
+    "species": "dog",
+    "name": "Max",
+    "age": 6,
+    "color": "white",
+    "weight": 12
+  }
+]
