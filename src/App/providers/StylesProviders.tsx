@@ -1,6 +1,7 @@
 import { MantineProvider } from '@mantine/core';
 import { type JSX, type ReactNode } from 'react';
 import '@mantine/core/styles.css';
+import '@mantine/carousel/styles.css';
 import '@/styles/index.css';
 
 type StylesProvidersProps = {

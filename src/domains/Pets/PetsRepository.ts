@@ -1,20 +1,16 @@
 import type { pet, species } from '@/types';
-import pets from './data.json';
+import petsJson from './data.json';
 
 interface IPetsRepository {
   pets: pet[];
   getSpecies(species: species): pet[];
 }
 
-export class PetsRepository implements IPetsRepository {
+class PetsRepository implements IPetsRepository {
   readonly #pets: pet[];
 
-  constructor() {
-    this.#pets = pets.map((pet): pet => {
-      return pet.photo
-        ? pet as pet
-        : { ...pet, photo: `${pet.species}.svg` } as pet;
-    });
+  constructor(pets: pet[]) {
+    this.#pets = pets;
   }
 
   get pets() {
@@ -26,4 +22,10 @@ export class PetsRepository implements IPetsRepository {
   }
 }
 
-export const petsRepository = new PetsRepository();
+const preparedPets = petsJson.map((pet): pet => {
+  return pet.photo
+    ? pet as pet
+    : { ...pet, photo: `${pet.species}.svg` } as pet;
+});
+
+export const petsRepository = new PetsRepository(preparedPets);
