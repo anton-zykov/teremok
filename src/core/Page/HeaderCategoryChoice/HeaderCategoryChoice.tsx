@@ -17,15 +17,18 @@ export const HeaderCategoryChoice = () => {
       <p className={styles.title}>I'm viewing...</p>
       <div className={styles.categories}>
         <Button
-          color={chosenCategory === 'cats' ? 'var(--Button-Primary_Initial)' : 'var(--Button-Primary_Hover)'}
+          color="fernGreen"
+          variant={chosenCategory === 'cats' ? 'filled' : 'light'}
           onClick={changeCategory('cats')}
         >Cats</Button>
         <Button
-          color={chosenCategory === 'dogs' ? 'var(--Button-Primary_Initial)' : 'var(--Button-Primary_Hover)'}
+          color="fernGreen"
+          variant={chosenCategory === 'dogs' ? 'filled' : 'light'}
           onClick={changeCategory('dogs')}
         >Dogs</Button>
         <Button
-          color={chosenCategory === 'all' ? 'var(--Button-Primary_Initial)' : 'var(--Button-Primary_Hover)'}
+          color="fernGreen"
+          variant={chosenCategory === 'all' ? 'filled' : 'light'}
           onClick={changeCategory('all')}
         >All</Button>
       </div>
