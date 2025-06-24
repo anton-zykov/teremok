@@ -1,4 +1,6 @@
 import { type JSX, type ReactNode } from 'react';
+import { HeaderCategoryChoice } from './HeaderCategoryChoice';
+import { Logo } from './Logo';
 import styles from './Page.module.css';
 
 type PageProps = {
@@ -8,6 +10,12 @@ type PageProps = {
 export const Page = ({ children }: PageProps): JSX.Element => {
   return (
     <div className={styles.page}>
+      <div className={styles.logo}>
+        <Logo />
+      </div>
+      <div className={styles.categories}>
+        <HeaderCategoryChoice />
+      </div>
       <div className={styles.pageContent}>
         {children}
       </div>

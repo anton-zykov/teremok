@@ -1,4 +1,5 @@
 export type species = 'cat' | 'dog';
+export type category = 'all' | 'cats' | 'dogs';
 
 export interface pet {
   id: number;

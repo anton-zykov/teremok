@@ -1,0 +1,17 @@
+.container {
+  height: 100%;
+  width: 100%;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  margin: 0;
+}
+
+.categories {
+  display: flex;
+  gap: 0.5em;
+}

@@ -5,12 +5,13 @@
   grid-template-areas:
     "logo categories"
     "pageContent pageContent";
-  grid-template-columns: 4em 1fr;
+  grid-template-columns: auto 1fr;
   grid-template-rows: 5em 1fr;
 }
 
 .logo {
   grid-area: logo;
+  height: 100%;
 }
 
 .categories {
