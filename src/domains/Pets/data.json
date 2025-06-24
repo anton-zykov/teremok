@@ -6,7 +6,11 @@
     "age": 3,
     "color": "white",
     "weight": 5,
-    "photo": "kitten.svg"
+    "mainPhoto": "main.jpg",
+    "photos": [
+      "photo_2025-06-24_11-23-24.jpg",
+      "photo_2025-06-24_11-23-34.jpg"
+    ]
   },
   {
     "id": 2,
@@ -15,7 +19,8 @@
     "age": 5,
     "color": "brown",
     "weight": 10,
-    "photo": "dog.svg"
+    "mainPhoto": "main.jpg",
+    "photos": []
   },
   {
     "id": 3,
@@ -23,7 +28,9 @@
     "name": "Garfield",
     "age": 4,
     "color": "orange",
-    "weight": 6
+    "weight": 6,
+    "mainPhoto": "main.jpg",
+    "photos": []
   },
   {
     "id": 4,
@@ -31,7 +38,9 @@
     "name": "Rover",
     "age": 8,
     "color": "black",
-    "weight": 15
+    "weight": 15,
+    "mainPhoto": "main.jpg",
+    "photos": []
   },
   {
     "id": 5,
@@ -39,7 +48,9 @@
     "name": "Mittens",
     "age": 2,
     "color": "grey",
-    "weight": 4
+    "weight": 4,
+    "mainPhoto": "main.jpg",
+    "photos": []
   },
   {
     "id": 6,
@@ -47,6 +58,8 @@
     "name": "Max",
     "age": 6,
     "color": "white",
-    "weight": 12
+    "weight": 12,
+    "mainPhoto": "main.jpg",
+    "photos": []
   }
 ]

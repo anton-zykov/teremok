@@ -7,5 +7,6 @@ export interface pet {
   age: number;
   color: string;
   weight: number;
-  photo: string;
+  mainPhoto: string;
+  photos: string[];
 }

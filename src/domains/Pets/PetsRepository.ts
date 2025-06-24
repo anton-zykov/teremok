@@ -27,10 +27,12 @@ class PetsRepository implements IPetsRepository {
   }
 }
 
-const preparedPets = petsJson.map((pet): pet => {
-  return pet.photo
-    ? pet as pet
-    : { ...pet, photo: `${pet.species}.svg` } as pet;
-});
+function constructImagePaths(pets: pet[]): pet[] {
+  return pets.map((pet) => ({
+    ...pet,
+    mainPhoto: `/${pet.id}/${pet.mainPhoto}`,
+    photos: pet.photos.map((photo) => `/${pet.id}/${photo}`),
+  }));
+}
 
-export const petsRepository = new PetsRepository(preparedPets);
+export const petsRepository = new PetsRepository(constructImagePaths(petsJson as pet[]));
