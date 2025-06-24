@@ -1,6 +1,7 @@
 import { Navigate, useParams } from 'react-router-dom';
 import { petsRepository } from '@/domains';
 import styles from './Pet.module.css';
+import { PhotosCarousel } from './PhotosCarousel';
 
 export const Pet = () => {
   const params = useParams();
@@ -12,7 +13,7 @@ export const Pet = () => {
 
   return (
     <div className={styles.container}>
-      <img src={pet.mainPhoto} alt={pet.name} style={{ width: '90%' }} />
+      <PhotosCarousel mainPhoto={pet.mainPhoto} photos={pet.photos} />
       <div className={styles.details}>
         <h3>{pet.name}</h3>
         <p>{pet.species}</p>
