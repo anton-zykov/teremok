@@ -16,7 +16,7 @@ export const PetsList = ({ species }: PetsListProps) => {
   const pets = species === 'all' ? petsRepository.pets : petsRepository.getSpecies(species);
   const slides = pets.map((pet) => (
     <Carousel.Slide key={pet.id} onClick={() => navigate(`/${pet.id}`)}>
-      <img src={pet.photo} alt={pet.name} height={'300px'} />
+      <img src={pet.mainPhoto} alt={pet.name} height={'300px'} />
       <p>{pet.name}, {pet.age} years</p>
     </Carousel.Slide>
   ));
