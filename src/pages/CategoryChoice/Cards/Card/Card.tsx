@@ -4,7 +4,7 @@ import styles from './Card.module.css';
 
 type CardProps = {
   children: ReactNode;
-  navigateTo: `/${string}`;
+  navigateTo?: `/${string}`;
 };
 
 export const Card = ({
@@ -16,7 +16,7 @@ export const Card = ({
   return (
     <div
       className={styles.card}
-      onClick={() => navigate(navigateTo)}
+      onClick={() => navigate(navigateTo || '/')}
     >{children}</div>
   );
 };

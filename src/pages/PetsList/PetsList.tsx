@@ -6,14 +6,14 @@ import { petsRepository } from '@/domains';
 import type { species } from '@/types';
 
 type PetsListProps = {
-  species: species | 'all';
+  species: species;
 };
 
 export const PetsList = ({ species }: PetsListProps) => {
   const autoplay = useRef(Autoplay({ delay: 5000 }));
   const navigate = useNavigate();
 
-  const pets = species === 'all' ? petsRepository.pets : petsRepository.getSpecies(species);
+  const pets = petsRepository.getSpecies(species);
   const slides = pets.map((pet) => (
     <Carousel.Slide key={pet.id} onClick={() => navigate(`/${pet.id}`)}>
       <img src={pet.mainPhoto} alt={pet.name} height={'300px'} />

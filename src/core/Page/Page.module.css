@@ -21,4 +21,8 @@
 .pageContent {
   grid-area: pageContent;
   overflow: auto;
+
+  /*background-color: #cdedff;*/
+  /*background-color: #ffd5d1;*/
+
 }

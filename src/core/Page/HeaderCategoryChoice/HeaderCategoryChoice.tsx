@@ -26,11 +26,6 @@ export const HeaderCategoryChoice = () => {
           variant={chosenCategory === 'dogs' ? 'filled' : 'light'}
           onClick={changeCategory('dogs')}
         >Dogs</Button>
-        <Button
-          color="fernGreen"
-          variant={chosenCategory === 'all' ? 'filled' : 'light'}
-          onClick={changeCategory('all')}
-        >All</Button>
       </div>
     </div>
   );

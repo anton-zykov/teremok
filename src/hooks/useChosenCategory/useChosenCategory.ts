@@ -4,6 +4,5 @@ import type { category } from '@/types';
 export const useChosenCategory = () => {
   return useLocalStorage<category>({
     key: 'category',
-    defaultValue: 'all',
   });
 };

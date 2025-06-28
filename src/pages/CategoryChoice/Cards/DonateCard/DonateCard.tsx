@@ -1,13 +1,11 @@
 import { Card } from '..';
 import PupKit from '@/assets/pupkit.svg?react';
 
-export const UnsureCard = () => {
+export const DonateCard = () => {
   return (
-    <Card
-      navigateTo="/all"
-    >
+    <Card>
       <PupKit />
-      <p>See all!</p>
+      <p>Donate</p>
     </Card>
   );
 };

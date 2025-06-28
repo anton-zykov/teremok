@@ -7,7 +7,6 @@ export const MainRouter = () => {
       <Route path="/" element={<CategoryChoice />} />
       <Route path="/cats/*" element={<PetsList species="cat" />} />
       <Route path="/dogs/*" element={<PetsList species="dog" />} />
-      <Route path="/all/*" element={<PetsList species="all" />} />
       <Route path=":id" element={<Pet />} />
     </Routes>
   );

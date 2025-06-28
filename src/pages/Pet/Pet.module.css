@@ -3,3 +3,9 @@
   grid-template-columns: repeat(2, minmax(50%, 1fr));
   gap: 4em;
 }
+
+.details {
+  /*color: #228b22;*/
+  /*font-weight: 600;*/
+  /*color: var(--Color-Sable);*/
+}
