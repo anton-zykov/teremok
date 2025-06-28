@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import { DonationsModalProvider } from './DonationsModalProvider';
 import { ReactBrowserRouter } from './ReactBrowserRouter';
 import { StylesProviders } from './StylesProviders';
 
@@ -10,7 +11,9 @@ export const Providers = ({ children }: ProvidersProps) => {
   return (
     <StylesProviders>
       <ReactBrowserRouter>
-        {children}
+        <DonationsModalProvider>
+          {children}
+        </DonationsModalProvider>
       </ReactBrowserRouter>
     </StylesProviders>
   );

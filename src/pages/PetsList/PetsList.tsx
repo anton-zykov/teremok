@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Autoplay from 'embla-carousel-autoplay';
 import { Carousel } from '@mantine/carousel';
-import { petsRepository } from '@/domains';
+import { petsRepository } from '@/domains/Pets';
 import type { species } from '@/types';
 
 type PetsListProps = {

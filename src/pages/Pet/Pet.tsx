@@ -1,5 +1,5 @@
 import { Navigate, useParams } from 'react-router-dom';
-import { petsRepository } from '@/domains';
+import { petsRepository } from '@/domains/Pets';
 import styles from './Pet.module.css';
 import { PhotosCarousel } from './PhotosCarousel';
 

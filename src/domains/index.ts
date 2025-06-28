@@ -1,1 +1,0 @@
-export { petsRepository } from './Pets';
