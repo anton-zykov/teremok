@@ -1,0 +1,16 @@
+.donateBar {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.donateBar:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}

@@ -5,8 +5,8 @@ export const DonationsModal = () => {
   const { opened, close } = useDonationsModal();
 
   return (
-    <Modal opened={opened} onClose={close} title="Authentication">
-      Hi
+    <Modal opened={opened} onClose={close} title="Donate to Teremok">
+      ...Ways to donate...
     </Modal>
   );
 };

@@ -1,4 +1,4 @@
-import { CatCard, DogCard, DonateCard } from './Cards';
+import { CatCard, DogCard } from './Cards';
 import styles from './CategoryChoice.module.css';
 
 export const CategoryChoice = () => {
@@ -8,7 +8,6 @@ export const CategoryChoice = () => {
       <div className={styles.cards}>
         <CatCard />
         <DogCard />
-        <DonateCard />
       </div>
     </div>
   );

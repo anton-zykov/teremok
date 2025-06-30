@@ -3,10 +3,11 @@
   width: 100vw;
   display: grid;
   grid-template-areas:
-    "logo categories"
-    "pageContent pageContent";
+    "logo header"
+    "logo pageContent"
+    "sidebar pageContent";
   grid-template-columns: auto 1fr;
-  grid-template-rows: 5em 1fr;
+  grid-template-rows: 4em 8em 1fr;
 }
 
 .logo {
@@ -14,8 +15,12 @@
   height: 100%;
 }
 
-.categories {
-  grid-area: categories;
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
 }
 
 .pageContent {
